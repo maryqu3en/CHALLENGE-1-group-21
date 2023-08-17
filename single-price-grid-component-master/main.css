@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Karla', sans-serif;
+}
+section > h2{
+    color: hsl(71, 73%, 54%);
+}
+section > div > button{
+    background-color: hsl(71, 73%, 54%);
+    box-shadow: -10px -10px 10px rgba(0, 0, 0, 0.1),15px 15px 15px rgba(0, 0, 0, 0.1),inset -5px -5px 10px rgba(255, 255, 255, 0.2),inset 15px 15px 15px rgba(0, 0, 0, 0.2);
+}
+section > div > button:hover{
+    border: 0;
+    box-shadow: 0 0 5px hsl(71, 73%, 54%),0 0 25px hsl(71, 73%, 54%),0 0 50px hsl(71, 73%, 54%),0 0 100px hsl(71, 73%, 54%);
+}
+.left{
+    background-color: hsl(179, 62%, 43%);
+}
+.right{
+    background-color: hsl(179, 64%, 46%);
+}
+@media (max-width:450px){
+    main{
+        top: 5%;
+        transform: translateY(0);
+    }
+}
